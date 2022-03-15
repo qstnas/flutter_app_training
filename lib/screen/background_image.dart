@@ -23,6 +23,7 @@ class _BackgroundImageState extends State<BackgroundImage> {
       }
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +39,6 @@ class _BackgroundImageState extends State<BackgroundImage> {
               child: Ink.image(
                   image: const AssetImage('assets/images/img 2.jpeg'),
                   fit: BoxFit.cover)),
-
           //second layer
           Container(
             padding: const EdgeInsets.all(20),
@@ -49,12 +49,12 @@ class _BackgroundImageState extends State<BackgroundImage> {
                   children: const [
                     Text(
                       "Title",
-                      style:
+                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                     ),
                     Text(
                       "Desc",
-                      style:
+                       style:
                           TextStyle(fontWeight: FontWeight.w300, fontSize: 18),
                     )
                   ],
