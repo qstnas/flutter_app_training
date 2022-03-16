@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:flutter_app/sidebar.dart';
 
@@ -12,24 +14,25 @@ class FlutterLayout extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Exercise 2")
       ),
+
       body: Container(
         child: Row (
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Column(
-              children: <Widget> [
+              children: const <Widget> [
                 Icon(Icons.access_alarm, color:Colors.blue,size: 50.0,),
                 Text("Alarm")
               ]
             ),
             Column(
-              children: <Widget> [
+              children: const <Widget> [
                 Icon(Icons.book_outlined, color:Color.fromARGB(255, 176, 55, 39),size: 50.0,),
                 Text("Book")
               ]
             ),
             Column(
-              children: <Widget> [
+              children: const <Widget> [
                 Icon(Icons.mail_outline, color:Colors.purple,size: 50.0,),
                 Text("Mail")
               ]

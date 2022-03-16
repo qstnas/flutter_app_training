@@ -20,7 +20,7 @@ class Sidebar extends StatelessWidget {
             ListTile(
               leading: const Icon(Icons.home),
               title: const Text('Flutter Layout Navigator Push'),
-              tileColor: Color.fromARGB(255, 249, 64, 255),
+              tileColor: const Color.fromARGB(255, 249, 64, 255),
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: ((context) => const FlutterLayout())));
               },
@@ -28,9 +28,25 @@ class Sidebar extends StatelessWidget {
             ListTile(
               leading: const Icon(Icons.wallpaper),
               title: const Text('Background Image Navigator Push Named'),
-              tileColor: Color.fromARGB(255, 215, 38, 221),
+              tileColor: const Color.fromARGB(255, 215, 38, 221),
               onTap: () {
                 Navigator.pushNamed(context, '/background-image');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.view_list_outlined),
+              title: const Text('Todo'),
+              tileColor: const Color.fromARGB(255, 248, 59, 255),
+              onTap: () {
+                Navigator.pushNamed(context, '/todo-screen');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.map_sharp),
+              title: const Text('Maps'),
+              tileColor: const Color.fromARGB(255, 175, 36, 180),
+              onTap: () {
+                Navigator.pushNamed(context, '/maps');
               },
             ),
           ],
